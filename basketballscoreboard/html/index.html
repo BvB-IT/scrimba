@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball Score Board</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <script src="/js/index.js" defer></script>
+    <div class="maincontainer">
+      <div class="game">
+        <button id="newgame" onclick="newGame()">New Game</button>
+      </div>
+      <div class="game">
+        <button id="savegame">Save Game</button>
+      </div>
+    </div>
+    <div class="gamecontainer">
+      <p id="leader">The current leader is:</p>
+
+      <div class="home">
+        <h3>HOME</h3>
+        <div id="scorehome">0</div>
+        <div id="fouls">0</div>
+        <div id="changescorehome">
+          <button class="buttongamescore" onclick="add1ToScoreHome()">
+            +1
+          </button>
+          <button class="buttongamescore" onclick="add2ToScoreHome()">
+            +2
+          </button>
+          <button class="buttongamescore" onclick="add3ToScoreHome()">
+            +3
+          </button>
+        </div>
+      </div>
+      <div class="guest">
+        <h3>Guest</h3>
+        <div id="scoreguest">0</div>
+        <div id="fouls">0</div>
+        <div id="changescoreguest">
+          <button class="buttongamescore" onclick="add1ToScoreGuest()">
+            +1
+          </button>
+          <button class="buttongamescore" onclick="add2ToScoreGuest()">
+            +2
+          </button>
+          <button class="buttongamescore" onclick="add3ToScoreGuest()">
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

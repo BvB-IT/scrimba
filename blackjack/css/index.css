@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  max-width: 360px;
+  max-height: 800px;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+h1 {
+  color: goldenrod;
+  text-align: center;
+}
+h5 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+#message-el {
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+#maincontainer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 9rem 3rem 21rem 3rem;
+  grid-template-areas:
+    'logo'
+    'header'
+    'game'
+    'footer';
+}
+
+#logo {
+  display: grid;
+  grid-area: logo;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  /* grid-template-areas: 'button1 button2 button3'; */
+  background-image: url(/recources/images/blackjacklogo.png);
+  background-size: 100% 99%;
+  background-repeat: no-repeat;
+}
+
+#header {
+  display: grid;
+  grid-area: header;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: 'drawcard   startgame   savegame';
+  grid-gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  background-color: #1e1d24;
+  border: linear-gradient (#2b211b, #eee5cf) 2px solid;
+}
+
+#game-el {
+  display: grid;
+  grid-area: game;
+  background-image: url(/recources/images/blakjactable.png);
+  background-size: 360px 260px;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 3rem 3rem 3rem 3rem auto;
+  grid-template-rows: 4rem 4rem 4rem 4rem;
+  grid-template-areas:
+    'card1      card2       card3        card4       .'
+    'card5      card6       card7        card8       .'
+    'card9      card10      card11       result      .'
+    '.            .         message      message     .';
+  grid-gap: 0.1rem;
+  border: linear-gradient (#2b211b, #eee5cf) 2px solid;
+  justify-content: left;
+  align-content: center;
+  padding: 1rem;
+}
+.hidden {
+  display: none;
+}
+.shown {
+  display: grid;
+}
+button {
+  color: #423429;
+  background-image: linear-gradient(#2b211b, #e9d1a6, #eee5cf);
+  border: linear-gradient (#2b211b, #eee5cf) 2px solid;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: x-small;
+}
+#startgame-el {
+  display: grid;
+  grid-area: startgame;
+}
+#savegame-el {
+  display: grid;
+  grid-area: savegame;
+}
+#drawcard-el {
+  display: grid;
+  grid-area: drawcard;
+}
+#card1-el {
+  display: grid;
+  grid-area: card1;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: linear-gradient (#2b211b, #eee5cf) 2px solid;
+}
+#card2-el {
+  display: grid;
+  grid-area: card2;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#card3-el {
+  grid-area: card3;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#card4-el {
+  grid-area: card4;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#card5-el {
+  grid-area: card5;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#card6-el {
+  grid-area: card6;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#card7-el {
+  grid-area: card7;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#card8-el {
+  grid-area: card8;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#card9-el {
+  grid-area: card9;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#card10-el {
+  grid-area: card10;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#card11-el {
+  grid-area: card11;
+  background-image: url(/recources/images/closedCard.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid goldenrod;
+}
+#total-el {
+  display: grid;
+  grid-area: result;
+  border: 1px solid goldenrod;
+}
+#message-el {
+  display: grid;
+  grid-area: message;
+}
+
+#footer {
+  display: grid;
+  grid-area: footer;
+}

@@ -1,0 +1,133 @@
+@font-face {
+  font-family: cursedtimer;
+  src: url('../recources/fonts/CursedTimerUlil-Aznm.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  max-width: 64rem;
+  font-family: curs;
+}
+
+.maincontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  align-content: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.game {
+  display: grid;
+  place-items: center;
+}
+
+#newgame {
+  display: grid;
+  width: 5rem;
+  height: 1.5rem;
+}
+
+#savegame {
+  display: grid;
+  width: 5rem;
+  height: 1.5rem;
+}
+
+.gamecontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'home1   guest1'
+    'leader  leader';
+  background-color: #1b244a;
+  border: 3px solid white;
+  border-radius: 5px;
+  margin-top: 3rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+  padding-bottom: 1rem;
+}
+
+#leader {
+  display: grid;
+  grid-area: leader;
+  justify-self: center;
+  border: 2px solid red;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  padding: 1rem;
+}
+
+.home {
+  display: grid;
+  grid-area: home1;
+  justify-items: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.guest {
+  display: grid;
+  grid-area: guest1;
+  justify-items: center;
+}
+
+#scorehome {
+  font-family: 'cursedtimer', truetype;
+  text-align: center;
+  line-height: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: black;
+  color: #da445f;
+  border: 2px solid green;
+}
+
+#scoreguest {
+  font-family: 'cursedtimer', truetype;
+  text-align: center;
+  line-height: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: black;
+  color: #da445f;
+  border: 2px solid green;
+}
+
+#fouls {
+  font-family: 'cursedtimer', truetype;
+  text-align: center;
+  line-height: 3rem;
+  margin: 1rem;
+  width: 2rem;
+  height: 2rem;
+  padding-bottom: 0.5rem;
+  background-color: black;
+  border: 2px solid yellow;
+  color: #da445f;
+}
+
+#changescorehome {
+  margin-top: 1rem;
+}
+
+#changescoreguest {
+  margin-top: 1rem;
+}
+
+.buttongamescore {
+  font-family: 'cursedtimer', truetype;
+  width: 30px;
+  height: 30px;
+}
